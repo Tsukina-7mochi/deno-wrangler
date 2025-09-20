@@ -12,7 +12,7 @@
     ]
   },
   "tasks": {
-    "build": "deno -RWE --allow-run=\"$DENO_DIR/npm/registry.npmjs.org/@esbuild/linux-x64/0.25.10/bin/esbuild\" build.ts",
+    "build": "deno -RWE --allow-run build.ts",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
