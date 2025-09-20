@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+    "lib": [
+      "ESNext",
+      "deno.window"
+    ]
+  },
+  "tasks": {},
+  "imports": {}
+}
