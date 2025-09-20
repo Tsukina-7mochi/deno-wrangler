@@ -1,0 +1,9 @@
+{
+  "$schema": "https://www.unpkg.com/wrangler@4.38.0/config-schema.json",
+  "name": "deno-wrangler",
+  "main": "src/mod.ts",
+  "compatibility_date": "2025-09-20",
+  "observability": {
+    "enabled": true
+  }
+}
