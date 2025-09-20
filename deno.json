@@ -9,17 +9,19 @@
     "lib": [
       "ESNext",
       "deno.window"
-    ],
-    "include": ["worker-configuration.d.ts", "src/**/*.ts"]
+    ]
   },
   "tasks": {
+    "build": "deno -RWE --allow-run=\"$DENO_DIR/npm/registry.npmjs.org/@esbuild/linux-x64/0.25.10/bin/esbuild\" build.ts",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
     "cf-typegen": "wrangler types"
   },
   "imports": {
+    "@deno/esbuild-plugin": "jsr:@deno/esbuild-plugin@^1.2.0",
     "cowsay": "npm:cowsay@^1.6.0",
+    "esbuild": "npm:esbuild@^0.25.10",
     "wrangler": "npm:wrangler@^4.38.0"
   }
 }
