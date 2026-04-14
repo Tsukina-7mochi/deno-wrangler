@@ -10,7 +10,7 @@
   },
   "tasks": {
     "build": "deno -RWE --allow-run build.ts",
-    "deploy": "deno wrangler deploy",
+    "deploy": "deno --allow-env --allow-run wrangler deploy",
     "dev": "deno wrangler dev",
     "start": "deno wrangler dev",
     "cf-typegen": "deno wrangler types"
