@@ -6,17 +6,14 @@
     "noImplicitOverride": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "lib": [
-      "ESNext",
-      "deno.window"
-    ]
+    "lib": ["ESNext", "deno.window"]
   },
   "tasks": {
     "build": "deno -RWE --allow-run build.ts",
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "cf-typegen": "wrangler types"
+    "deploy": "deno wrangler deploy",
+    "dev": "deno wrangler dev",
+    "start": "deno wrangler dev",
+    "cf-typegen": "deno wrangler types"
   },
   "imports": {
     "@deno/esbuild-plugin": "jsr:@deno/esbuild-plugin@^1.2.0",
